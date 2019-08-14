@@ -25,10 +25,10 @@ spring:
     username: root
     password: Zwm1986!
     dbcp2:
-    min-idle: 5
-    initial-size: 5
-    max-total: 5
-    max-wait-millis: 150
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 150
 
 
 eureka:
