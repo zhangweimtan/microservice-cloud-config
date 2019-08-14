@@ -34,15 +34,15 @@ spring:
 eureka:
   client:
     register-with-eureka: true #服务注册开关
-  fetch-registry: true # 服务发现开关
-  service-url: #注册到服务端eurekaServer，多个client用逗号分隔
+    fetch-registry: true # 服务发现开关
+    service-url: #注册到服务端eurekaServer，多个client用逗号分隔
     #		 defaultZone: http://localhost:6001/eureka
-    defaultZone: http://eureka6001.com:6001/eureka
+      defaultZone: http://eureka6001.com:6001/eureka
 
 
   instance:
-  instance-id: ${spring.application.name}:${server.port} #指定实例ID
-  prefer-ip-address: true #显示ip地址
+    instance-id: ${spring.application.name}:${server.port} #指定实例ID
+    prefer-ip-address: true #显示ip地址
 
 ---
 
@@ -83,5 +83,5 @@ eureka:
     defaultZone: http://eureka6001.com:6001/eureka
 
   instance:
-  instance-id: ${spring.application.name}:${server.port} #指定实例ID
-  prefer-ip-address: true #显示ip地址
+    instance-id: ${spring.application.name}:${server.port} #指定实例ID
+    prefer-ip-address: true #显示ip地址
