@@ -20,6 +20,8 @@ eureka:
         fetch-registry: flase
         service-url:
             defaultZone: http://eureka6001.com:6001/eureka/
+    server:
+        enable-self-preservation: false # 开启自我保护机制      
 
 ---
 server:
