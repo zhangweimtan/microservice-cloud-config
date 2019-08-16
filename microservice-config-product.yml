@@ -45,7 +45,7 @@ eureka:
     prefer-ip-address: true #显示ip地址
     
 emp:
-  name: llolo
+  name: hahaha
 
 ---
 
