@@ -43,6 +43,9 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port} #指定实例ID
     prefer-ip-address: true #显示ip地址
+    
+emp:
+  name: llolo
 
 ---
 
