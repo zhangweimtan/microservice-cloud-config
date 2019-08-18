@@ -21,9 +21,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     #	 url: jdbc:mysql//127.0.0.1:3306/springcloud_db01?serverTimeZone=GMT%2B8
-    url: jdbc:mysql://127.0.0.1:3306/springcloud_db02
+    url: jdbc:mysql://47.104.228.151:33306/springcloud_db01?serverTimezone=GMT%2B8
     username: root
-    password: Zwm1986!
+    password: 123456
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -37,7 +37,7 @@ eureka:
     fetch-registry: true # 服务发现开关
     service-url: #注册到服务端eurekaServer，多个client用逗号分隔
     #		 defaultZone: http://localhost:6001/eureka
-      defaultZone: http://eureka6001.com:6001/eureka
+      defaultZone: http://47.104.228.151:6001/eureka
 
 
   instance:
@@ -67,9 +67,9 @@ spring:
   type: com.alibaba.druid.pool.DruidDataSource
   driver-class-name: com.mysql.cj.jdbc.Driver
   #	 url: jdbc:mysql//127.0.0.1:3306/springcloud_db02?serverTimeZone=GMT%2B8
-  url: jdbc:mysql://127.0.0.1:3306/springcloud_db02
+  url: jdbc:mysql://47.104.228.151:33306/springcloud_db02?serverTimezone=GMT%2B8
   username: root
-  password: Zwm1986!
+  password: 123456
   dbcp2:
     min-idle: 5
     initial-size: 5
@@ -83,7 +83,7 @@ eureka:
     fetch-registry: true # 服务发现开关
     service-url: #注册到服务端eurekaServer，多个client用逗号分隔
     #		 defaultZone: http://localhost:6001/eureka
-      defaultZone: http://eureka6001.com:6001/eureka
+      defaultZone: http://e47.104.228.151:6001/eureka
 
   instance:
     instance-id: ${spring.application.name}:${server.port} #指定实例ID
