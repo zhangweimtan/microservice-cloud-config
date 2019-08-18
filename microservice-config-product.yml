@@ -83,7 +83,7 @@ eureka:
     fetch-registry: true # 服务发现开关
     service-url: #注册到服务端eurekaServer，多个client用逗号分隔
     #		 defaultZone: http://localhost:6001/eureka
-      defaultZone: http://e47.104.228.151:6001/eureka
+      defaultZone: http://47.104.228.151:6001/eureka
 
   instance:
     instance-id: ${spring.application.name}:${server.port} #指定实例ID
